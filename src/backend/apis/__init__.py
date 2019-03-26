@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask_restful import Api
 
-bp = Blueprint('api', __name__)
+bp = Blueprint('apis', __name__)
 api = Api(bp)
 
 from .auth import RegisterAPI, LoginAPI, LogoutAPI
